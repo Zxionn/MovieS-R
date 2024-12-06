@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUGGEST | RATING</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-neutral-950 w-full pb-14">
+        <nav>
+            <a href=""><img class="home" src="./img/home.png" alt=""></a>
+            <a href=""><img class="set"src="./img/settings.png" alt=""></a>
+            <a href=""><img class="logo" src="./img/logo.png" alt="logo"></a>
+            <input class="sbar bg-red-900" type="text" placeholder="S E A R C H   S O M E T H I N G . . .">
+            <a href=""><img class="premium" src="./img/extensions.png" alt=""></a>
+        </nav> 
+    </div>
+    <div class="movies bg-neutral-950 w-full h-screen opacity-100">
+        <div class="film"> 
+            <div class="filmimage">
+                <img id="movieimage" src="./img/logo.png" alt="please">
+                <p id="synopsis">Welcome to Movie Suggestions and Ratings! Want to watch movies but don't know what? Have we got the movies for you! Not only that, but you also have the options to rate the movies based on your opinion!</p>
+            </div>
+            <div class="card">
+                <h1>Star Rating</h1>
+                <br />
+                <span onclick="gfg(1)"
+                      class="star">★
+                </span>
+                <span onclick="gfg(2)"
+                      class="star">★
+                </span>
+                <span onclick="gfg(3)"
+                      class="star">★
+                </span>
+                <span onclick="gfg(4)"
+                      class="star">★
+                </span>
+                <span onclick="gfg(5)"
+                      class="star">★
+                </span>
+                <h3 id="output">
+                      Rating is: 0/5
+                  </h3>
+            </div>
+        </div>
+    </div>
+    <div class="movies  bg-neutral-950 w-full h-full">
+        <div class="genre">
+            <h3 class="genretitles">Romance</h3>
+            <div class="sgstns">
+                <img class="movimg" src="./img/nb.png" alt="placeholder">
+                <button onclick="image1()">The Notebook(2014)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/lose a guy.png" alt="placeholder">
+                <button style="font-size:.88rem;" onclick="image2()">How to Lose a Guy in 10 Days(2003)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/50fd.png" alt="placeholder">
+                <button onclick="image3()">50 First Dates(2004)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/hou.png" alt="placeholder">
+                <button onclick="image4()">The Hows of Us(2018)</button>
+            </div>
+            <div class="sgstns" style="margin-top:42px">
+                <img class="movimg" src="./img/grey.png" alt="placeholder">
+                <button onclick="image5()">Fifty Shades of Grey(2015)</button>
+            </div>
+            <div class="sgstns" style="margin-top:42px">
+                <img class="movimg" src="./img/titanic.png" alt="placeholder">
+                <button onclick="image6()">Titanic(1998)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/nhf.png" alt="placeholder" style="margin-top:22px;">
+                <button onclick="image7()">No Hard Feelings(2023)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/wwfm.png" alt="placeholder" style="margin-top:22px;">
+                <button onclick="image8()">When We First Met(2018)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/finfonsmne.png" alt="placeholder">
+                <button onclick="image9()">Finally Found Someone(2017)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/xandy.png" alt="placeholder" style="margin-bottom:13px;">
+                <button onclick="image10()">My Ex and Whys(2017)</button>
+            </div>
+        </div>
+        <div class="genre">
+            <h3 class="genretitles">Anime</h3>
+            <div class="sgstns">
+                <img class="movimg" src="./img/yn.jpg" alt="placeholder">
+                <button onclick="image11()">Your Name(2016)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/fireflies.jpg" alt="placeholder">
+                <button onclick="image12()">Grave of the Fireflies(1988)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/violet.jpg" alt="placeholder">
+                <button style="width:270px;word-wrap:break-word" onclick="image13()">Violet Evergarden: The Movie(2020)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/jjk0.jpg" alt="placeholder" style="margin-bottom:24px">
+                <button onclick="image14()">Jujutsu Kaisen 0(2021)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/mugen.jpg" alt="placeholder">
+                <button style="width:270px;word-wrap:break-word;" onclick="image15()">Demon Slayer - The Movie: Mugen Train(2020)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/spirit.jpg" alt="placeholder" style="margin-bottom:24px">
+                <button onclick="image16()">Spirited Away(2001)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/mononoke.jpg" alt="placeholder">
+                <button onclick="image17()">Princess Mononoke(1997)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/pancreas.jpg" alt="placeholder">
+                <button style="font-size:.88rem;" onclick="image18()">I Want to Eat Your Pancreas(2018)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/weather.jpg" alt="placeholder">
+                <button style="font-size:.88rem;" onclick="image18()">I Want to Eat Your Pancreas(2018)</button>
+                <button onclick="image19()">Weathering with You(2019)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/totoro.jpg" alt="placeholder">
+                <button onclick="image20()">My Neighbor Totoro(1988)</button>
+            </div>
+        </div>
+        <div class="genre">
+            <h3 class="genretitles">Sci-Fi</h3>
+            <div class="sgstns">
+                <img class="movimg" src="./img/hungry.jpg" alt="placeholder">
+                <button onclick="image21()">The Hunger Games(2012)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/dayaftertom.jpg" alt="placeholder">
+                <button onclick="image22()">The Day After Tomorrow(2004)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/MORB.jpg" alt="placeholder">
+                <button onclick="image23()">Morbius(2022)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/MONKE.jpg" alt="placeholder">
+                <button onclick="image24()">Godzilla vs. Kong(2021)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/geostorm.jpg" alt="placeholder">
+                <button onclick="image25()">Geostorm(2017)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/eli.jpg" alt="placeholder">
+                <button onclick="image26()">The Book of Eli(2010)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/pereg.jpg" alt="placeholder">
+                <button style="width:270px;word-wrap:break-word;" onclick="image27()">Miss Peregrine's Home for Peculiar
+                    Children(2016)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/anni.jpg" alt="placeholder" style="margin-top:0px;">
+                <button onclick="image28()">Annihilation(2018)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/dune.jpg" alt="placeholder">
+                <button onclick="image29()">Dune(2021)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/rotj.jpg" alt="placeholder">
+                <button onclick="image30()">The Return of the Jedi(1983)</button>
+            </div>
+        </div>
+        <div class="genre">
+            <h3 class="genretitles">Horror</h3>
+            <div class="sgstns">
+                <img class="movimg" src="./img/terrifier.jpg" alt="placeholder">
+                <button onclick="image31()">Terrifier(2016)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/cent.jfif" alt="placeholder">
+                <button onclick="imag32()">Human Centipede(2009)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/incant.jpg" alt="placeholder">
+                <button onclick="image33()">Incantation(2022)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/asylum.jpg" alt="placeholder">
+                <button onclick="image34()">Gonjiam:Haunted Asylum(2018)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/conj.jpg" alt="placeholder">
+                <button onclick="image35()">The Conjuring(2013)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/it.jpg" alt="placeholder">
+                <button onclick="image36()">IT(2017)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/mama.jpg" alt="placeholder">
+                <button onclick="image37()">Mama(2013)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/saw.jpg" alt="placeholder">
+                <button onclick="image38()">Saw(2004)</button>
+            </div>
+            <div class="sgstns" style="margin-top:40px">
+                <img class="movimg" src="./img/mist.jpg" alt="placeholder">
+                <button onclick="image39()">The Mist(2007)</button>
+            </div>
+            <div class="sgstns" style="margin-top:40px">
+                <img class="movimg" src="./img/quiet.jpg" alt="placeholder">
+                <button onclick="image40()">A Quiet Place(2018)</button>
+            </div>
+        </div>
+        <div class="genre">
+            <h3 class="genretitles">Action</h3>
+            <div class="sgstns">
+                <img class="movimg" src="./img/snwdn.jpg" alt="placeholder">
+                <button onclick="image41()">Snowden(2016)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/next.jpg" alt="placeholder">
+                <button onclick="image42()">Next(2007)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/mile.jpg" alt="placeholder" style="margin-bottom:23px">
+                <button onclick="image43()">Mile 22(2018)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/gotg3.jpeg" alt="placeholder">
+                <button style="width:270px;word-wrap:break-word" onclick="image44()">Guardians of the Galaxy Vol. 3(2023)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/cove.png" alt="placeholder">
+                <button style="width:270px;word-wrap:break-word" onclick="image45()">Guy Ritchie's The Covenant(2023)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/ruse.jpg" alt="placeholder">
+                <button style="width:270px;word-wrap:break-word" onclick="image46()">Operation Fortune: Ruse de Guerre(2023)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/edge.jpg" alt="placeholder">
+                <button onclick="image47()">Edge of Tomorrow(2014)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/FAST.jfif" alt="placeholder">
+                <button onclick="image48()">Fast X(2023)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/intel.jpg" alt="placeholder">
+                <button onclick="image49()">Central Intelligence(2016)</button>
+            </div>
+            <div class="sgstns">
+                <img class="movimg" src="./img/under.jpg" alt="placeholder">
+                <button onclick="image50()">6 Underground(2019)</button>
+            </div>
+        </div>
+    </div>
+    <script src="./img/script.js"></script>
+</body>
+</html>

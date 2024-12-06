@@ -1,0 +1,159 @@
+img{
+    position:relative;
+    top:0px;
+    float:left;
+    width:120px;
+    overflow:auto;
+    left:20px;
+    height:20px;
+}
+input{
+    position:relative;
+}
+.film{
+    border-radius:10px;
+}
+#filmimage{
+    padding-bottom:200px;
+    
+}
+#movieimage{
+    width:27%;
+    padding-top:3%;
+    padding-left:3%;
+    align-items:center;
+}
+#synopsis{
+    color:white;
+    margin-left:5px;
+    color:rgb(220, 220, 220);
+    padding:15px;
+    margin-left:35%;
+    text-align:justify;
+    font-size:1.3rem;
+    font-family:"Avenir LT Pro";
+    letter-spacing:1.2px;
+    display:flex;
+    flex-wrap:wrap;
+}
+.premium{
+    width:130px;
+    top:10px;
+    float:right;
+    left:2px;
+}
+.logo{
+    width:400px;
+    text-align:center;
+    top:7px;
+}
+.sbar{
+    height:50px;
+    margin-top:30px;
+    width:700px;
+    border-radius:50px;
+    opacity:.7;
+    color:white;
+    font-family:"Avenir LT Pro";
+    font-weight:bold;
+    padding-left:15px;
+    font-size:1.6rem;
+    margin-left:50px;
+}
+.movies{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.movies > div{
+    margin-left:3%;
+    margin-right:3%;
+    margin-bottom:10%;
+}
+.genre{
+    background-color:#4F1211;
+    width:40%;
+    height:30%;
+    margin-left:5px;
+    color:rgb(220, 220, 220);
+    padding:7px;
+    font-family:"Avenir LT Pro";
+    letter-spacing:1.2px;
+    display:flex;
+    flex-wrap:wrap;
+    border-radius:10px;
+}
+
+.film{
+    background-color:#4F1211;
+    margin-top:20px;
+    width:90%;
+}
+.sgstns{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    text-shadow:10px 10px 15px black;
+    margin:auto;
+    flex-wrap:wrap;
+    margin:15px;
+    margin-left:auto;
+
+}
+.sgstns > img{
+    height:400px;
+    width:271px;
+}
+.movimg{
+    position:static;
+    margin:auto;   
+}
+.genretitles{
+    text-align:center;
+    width:100%;
+    font-size:2rem;
+    text-shadow:10px 10px 12px black;
+    color:white;
+    font-weight:bold;
+    font-variant:small-caps;
+}
+.card {
+    clear:right;
+    text-align:center;
+    max-width: 33rem;
+    background: #fff;
+    margin: 0 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-left:60%;
+    margin-top:8%;
+}
+
+.star {
+    font-size:5rem;
+    cursor:pointer;
+}
+
+.one {
+    color: rgb(255, 0, 0);
+}
+
+.two {
+    color: rgb(255, 106, 0);
+}
+
+.three {
+    color: rgb(251, 255, 120);
+}
+
+.four {
+    color: rgb(255, 255, 0);
+}
+
+.five {
+    color: rgb(24, 159, 14);
+}
